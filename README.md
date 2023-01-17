@@ -1,23 +1,22 @@
-# Discord Chatbot
+# gpt-discord-chatbot
 
-A simple Python-based Discord chatbot.
+A simple Python-based Discord chatbot that uses GPT-3 for natural language processing and text generation.
 
 ## Overview
 
-This repository contains a basic implementation of a Discord chatbot using Python. The chatbot uses the `discord.py`
-library to interact with the Discord API and handle events such as messages, reactions, and more. It can be used to
-create custom commands, automate tasks, and integrate with external APIs.
-
+This repository contains a basic implementation of a Discord chatbot using Python and GPT-3. The chatbot uses the discord.py library to interact with the Discord API and handle events such as messages, reactions, and more. It also uses OpenAI's GPT-3 to process natural language and generate text based on the user's input. It can be used to create custom commands, automate tasks, and integrate with external APIs.
 ## Features
 
 - Custom command
 - Automated tasks
 - Integration with external APIs
+- Natural Language Processing and Text Generation using GPT-3
 
 ## Requirements
 
 - Python 3.7 or later
 - `discord.py` library
+- OpenAI API Key
 - Discord bot token
 
 ## Usage
