@@ -165,9 +165,9 @@ async def on_message(message: DiscordMessage):
 
         # ignore threads that are archived locked or title is not what we want
         if (
-            thread.archived
-            or thread.locked
-            or not thread.name.startswith(ACTIVATE_THREAD_PREFX)
+                thread.archived
+                or thread.locked
+                or not thread.name.startswith(ACTIVATE_THREAD_PREFX)
         ):
             # ignore this thread
             return
@@ -224,9 +224,9 @@ async def on_message(message: DiscordMessage):
         if SECONDS_DELAY_RECEIVING_MSG > 0:
             await asyncio.sleep(SECONDS_DELAY_RECEIVING_MSG)
             if is_last_message_stale(
-                interaction_message=message,
-                last_message=thread.last_message,
-                bot_id=client.user.id,
+                    interaction_message=message,
+                    last_message=thread.last_message,
+                    bot_id=client.user.id,
             ):
                 # there is another message, so ignore this one
                 return
@@ -249,9 +249,9 @@ async def on_message(message: DiscordMessage):
             )
 
         if is_last_message_stale(
-            interaction_message=message,
-            last_message=thread.last_message,
-            bot_id=client.user.id,
+                interaction_message=message,
+                last_message=thread.last_message,
+                bot_id=client.user.id,
         ):
             # there is another message and its not from us, so ignore this response
             return
