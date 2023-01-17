@@ -19,6 +19,7 @@ EXAMPLE_CONVOS = CONFIG.example_conversations
 
 DISCORD_BOT_TOKEN = os.environ["DISCORD_BOT_TOKEN"]
 DISCORD_CLIENT_ID = os.environ["DISCORD_CLIENT_ID"]
+DISCORD_PERMISSIONS = os.environ["DISCORD_PERMISSIONS"]
 OPENAI_API_KEY = os.environ["OPENAI_API_KEY"]
 
 ALLOWED_SERVER_IDS: List[int] = []
@@ -32,8 +33,9 @@ for s in server_channels:
     values = s.split(":")
     SERVER_TO_MODERATION_CHANNEL[int(values[0])] = int(values[1])
 
-# Send Messages, Create Public Threads, Send Messages in Threads, Manage Messages, Manage Threads, Read Message History, Use Slash Command
-BOT_INVITE_URL = f"https://discord.com/api/oauth2/authorize?client_id={DISCORD_CLIENT_ID}&permissions=328565073920&scope=bot"
+# Send Messages, Create Public Threads, Send Messages in Threads, Manage Messages, Manage Threads, Read Message
+# History, Use Slash Command
+BOT_INVITE_URL = f"https://discord.com/api/oauth2/authorize?client_id={DISCORD_CLIENT_ID}&permissions={DISCORD_PERMISSIONS}&scope=bot"
 
 MODERATION_VALUES_FOR_BLOCKED = {
     "hate": 0.5,
