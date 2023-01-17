@@ -63,7 +63,7 @@ If you find any bugs or would like to add new features, please feel free to open
 
 ## License
 
-This repository is released under the MIT license. See LICENSE for more details.
+This repository is released under the MIT license. See [LICENSE](https://github.com/shamspias/gpt-discord-chatbot/blob/main/LICENSE) for more details.
 
 Please note that you will need to create a bot account on Discord and invite it to your server before you can use it.
 you can find more information about creating a bot account on the [Discord Developer Portal](https://discord.com/developers/docs/intro)
