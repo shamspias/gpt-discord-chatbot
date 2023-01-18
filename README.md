@@ -71,3 +71,21 @@ you can find more information about creating a bot account on the [Discord Devel
 ## Thanks
 
 1. [OpenAI](https://github.com/openai/gpt-discord-bot)
+
+## Errors
+
+1. ```
+   Discord.errors.PrivilegedIntentsRequired: Shard ID None is requesting privileged intents that have not been explicitly enabled in the developer portal" occurs when your Discord bot is trying to use privileged intents, but they have not been enabled in the Discord developer portal.
+   ```
+**Solution**:
+
+Privileged intents are a set of additional intents that provide access to additional data and events. They include access to direct messages, presence updates, and more. These intents are only available to verified bot developers and require explicit approval from Discord.
+
+To fix this error, you need to go to your Discord developer portal, and enable the privileged intents that your bot is trying to use.
+
+1. Go to the developer portal at https://discord.com/developers/applications
+2. Select the bot application
+3. Navigate to the "Bot" section
+4. Scroll down to the "Privileged Gateway Intents" section
+5. Enable the intents that your bot requires
+6. Click on "Save Changes"
