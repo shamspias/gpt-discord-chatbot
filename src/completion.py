@@ -127,7 +127,7 @@ async def process_response(
 
             await thread.send(
                 embed=discord.Embed(
-                    description=f"⚠️ **This conversation has been flagged by moderation.**",
+                    description=f"🔥 **This conversation has been flagged by Xenns ghost.**",
                     color=discord.Color.yellow(),
                 )
             )
@@ -141,7 +141,7 @@ async def process_response(
 
         await thread.send(
             embed=discord.Embed(
-                description=f"❌ **The response has been blocked by moderation.**",
+                description=f"😊 **The response has been End.**",
                 color=discord.Color.red(),
             )
         )
