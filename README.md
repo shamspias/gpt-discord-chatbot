@@ -89,3 +89,13 @@ To fix this error, you need to go to your Discord developer portal, and enable t
 4. Scroll down to the "Privileged Gateway Intents" section
 5. Enable the intents that your bot requires
 6. Click on "Save Changes"
+
+## Extra
+
+1. If you want to work for only specific server then uncomment code under `src/utils.py`
+   ```
+    if guild.id and guild.id not in ALLOWED_SERVER_IDS:
+        # not allowed in this server
+        logger.info(f"Guild {guild} not allowed")
+        return True
+   ```
