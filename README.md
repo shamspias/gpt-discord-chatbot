@@ -24,21 +24,21 @@ This repository contains a basic implementation of a Discord chatbot using Pytho
 1. Clone the repository:
 
     ```
-    git clone https://github.com/<your-username>/discord-chatbot.git
+    git clone https://github.com/shamspias/gpt-discord-chatbot
     ```
 
-2. Install the dependencies:
+2. Install the dependencies into virtual env:
 
     ```
     pip install -r requirements.txt
     ```
 
-3. Replace `YOUR_TOKEN` in `bot.py` with your Discord bot token.
+3. Replace .env.example into .env and give the API keys and discord client and secreat in `.env` with your Discord bot token.
 
 4. Run the bot:
 
     ```
-    python bot.py
+    python -m src.main.py
     ```
 
 5. The bot should now be running and connected to your Discord server. You can interact with it by sending messages or
